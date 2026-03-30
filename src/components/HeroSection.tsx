@@ -40,7 +40,7 @@ const HeroSection = () => {
 
         <div className="flex gap-7 flex-wrap justify-center animate-fade-up [animation-delay:300ms] opacity-0">
             <a
-            href="https://wa.me/947XXXXXXXX"
+            href="https://wa.me/94783001095"
             target="_blank"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-[#FBBF24] to-[#F59E0B] text-black font-bold hover:scale-105 hover:shadow-xl transition-all duration-300"
           >

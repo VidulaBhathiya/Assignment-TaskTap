@@ -9,23 +9,29 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-[90px] px-[5%] bg-muted/50">
-      <div className="max-w-6xl mx-auto">
-        <span className="inline-block text-xs font-bold tracking-[2px] uppercase text-secondary mb-3">
-          What We Offer
-        </span>
-        <h2 className="font-heading text-[clamp(1.8rem,3.5vw,2.8rem)] font-black text-foreground leading-tight mb-4">
-          Our Academic Services
-        </h2>
-        <p className="text-base text-muted-foreground leading-relaxed max-w-[540px]">
-          Comprehensive writing support tailored to your academic level and subject area.
-        </p>
+    <section id="services">
+      <section className="bg-hero py-20 px-[5%]">
+        <div className="max-w-6xl mx-auto">
+          <span className="inline-block text-xs font-bold tracking-[2px] uppercase text-secondary mb-3 animate-fade-up">
+            What We Offer
+          </span>
+          <h2 className="font-heading text-[clamp(2rem,4vw,3rem)] font-black leading-tight mb-4 animate-fade-up [animation-delay:100ms] opacity-0" style={{ color: "hsl(0 0% 98%)" }}>
+            Our Academic Services
+          </h2>
+          <p className="text-base leading-relaxed max-w-[540px] animate-fade-up [animation-delay:200ms] opacity-0" style={{ color: "hsl(0 0% 100% / 0.7)" }}>
+            Comprehensive writing support tailored to your academic level and subject area.
+          </p>
+        </div>
+      </section>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-          {services.map((s) => (
+      <section className="py-[90px] px-[5%] bg-muted/50">
+        <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((s, index) => (
             <div
               key={s.title}
-              className="group relative bg-card rounded-2xl p-8 shadow-card border border-border hover:-translate-y-1.5 hover:shadow-card-hover transition-all duration-300 overflow-hidden"
+              className="group relative bg-card rounded-2xl p-8 shadow-card border border-border hover:-translate-y-1.5 hover:shadow-card-hover transition-all duration-300 overflow-hidden animate-fade-up opacity-0"
+              style={{ animationDelay: `${150 + index * 90}ms` }}
             >
               <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-primary to-secondary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
               <div className="w-[54px] h-[54px] rounded-[14px] mb-5 flex items-center justify-center text-2xl bg-muted">
@@ -36,7 +42,8 @@ const ServicesSection = () => {
             </div>
           ))}
         </div>
-      </div>
+        </div>
+      </section>
     </section>
   );
 };

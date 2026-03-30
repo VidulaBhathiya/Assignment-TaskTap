@@ -68,9 +68,9 @@ const Navbar = () => {
           <li key={link.to}>
             <Link
               to={link.to}
-              className={`text-sm font-bold transition-colors no-underline px-1.5 py-1 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+              className={`text-sm font-extrabold transition-colors no-underline px-1.5 py-1 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
                 location.pathname === link.to
-                  ? "text-secondary font-bold"
+                  ? "text-secondary"
                   : "text-muted-foreground hover:text-primary"
               }`}
             >
@@ -109,8 +109,8 @@ const Navbar = () => {
             <Link
               key={link.to}
               to={link.to}
-              className={`text-base font-bold no-underline px-4 py-3 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
-                location.pathname === link.to ? "text-secondary font-bold" : "text-foreground"
+              className={`text-base font-extrabold no-underline px-4 py-3 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+                location.pathname === link.to ? "text-secondary" : "text-foreground"
               }`}
             >
               {link.label}

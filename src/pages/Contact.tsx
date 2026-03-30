@@ -2,25 +2,12 @@ import Navbar from "@/components/Navbar";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WhatsAppFab from "@/components/WhatsAppFab";
-import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
     <main className="min-h-screen">
       <Navbar />
       <div className="pt-[70px]">
-        {/* Page Header */}
-        <section className="px-[5%] pt-10">
-          <div className="max-w-6xl mx-auto">
-            <Link
-              to="/"
-              className="inline-flex items-center px-5 py-2.5 rounded-full border border-border text-sm font-semibold text-foreground no-underline hover:bg-muted transition-colors"
-            >
-              Home
-            </Link>
-          </div>
-        </section>
-
         <ContactSection />
 
         {/* Map / Extra Info */}
@@ -34,7 +21,7 @@ const Contact = () => {
               <div className="bg-card rounded-2xl px-8 py-6 shadow-card border border-border">
                 <div className="text-2xl mb-2">📧</div>
                 <div className="text-xs text-muted-foreground uppercase tracking-wide">Email</div>
-                <div className="text-sm font-bold text-foreground mt-1">assignmenttasktap@gmail.com</div>
+                <div className="text-sm font-bold text-foreground mt-1">assignmenttasktapme@gmail.com</div>
               </div>
               <div className="bg-card rounded-2xl px-8 py-6 shadow-card border border-border">
                 <div className="text-2xl mb-2">📲</div>

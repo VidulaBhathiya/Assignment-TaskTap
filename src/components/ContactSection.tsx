@@ -5,7 +5,7 @@ import { toast } from "@/components/ui/sonner";
 const contactInfo = [
   { icon: "💵", label: "Affordable price", value: "Student-Friendly Rates" },
   { icon: "💬", label: "WhatsApp / Chat", value: "Message us directly for instant support" },
-  { icon: "📧", label: "Email", value: "assignmenttasktap@gmail.com" },
+  { icon: "📧", label: "Email", value: "assignmenttasktapme@gmail.com" },
   { icon: "⏰", label: "Response Time", value: "Within 1–2 hours, 7 days a week" },
   { icon: "🔒", label: "Privacy", value: "100% confidential your data is safe with us" },
 ];
@@ -43,7 +43,7 @@ const ContactSection = () => {
       `Name: ${form.name}\nEmail: ${form.email}\n\nDetails:\n${form.details}`
     );
 
-    window.location.href = `mailto:assignmenttasktap@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:assignmenttasktapme@gmail.com?subject=${subject}&body=${body}`;
   };
 
   // 💬 WhatsApp
@@ -58,7 +58,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-[80px] px-[5%]">
+    <section id="contact" className="py-[15px] px-[5%]">
       <div className="max-w-6xl mx-auto">
 
         <span className="inline-block text-xs font-bold tracking-[2px] uppercase text-secondary mb-3">

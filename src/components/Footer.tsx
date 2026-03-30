@@ -28,13 +28,12 @@ const Footer = () => (
         <div className="flex-1 min-w-[140px]">
           <h4 className="text-sm font-bold mb-4 tracking-wide" style={{ color: 'hsl(0 0% 100%)' }}>Programs & Specializations</h4>
           {[
-            { label: "📜certificate course", to: "/" },
+            { label: "📜certificate course and nvq levels", to: "/" },
             { label: "🏅Diploma Programs", to: "/services" },
             { label: "🎖️Higher Diploma / HND", to: "/payments" },
             { label: "🎓Bachelor's Degrees", to: "/order" },
             { label: "🏆Master's Degrees", to: "/development" },
-            { label: "About Us", to: "/about" },
-            { label: "Contact Us", to: "/contact" },
+          
           ].map((l) => (
             <Link key={l.label} to={l.to} className="block text-[13px] mb-2 no-underline hover:text-secondary transition-colors" style={{ color: 'hsl(0 0% 100% / 0.55)' }}>
               {l.label}
@@ -55,9 +54,10 @@ const Footer = () => (
         {/* Contact */}
         <div className="flex-1 min-w-[250px]">
           <h4 className="text-sm font-bold mb-4 tracking-wide" style={{ color: 'hsl(0, 0%, 98%)' }}>Contact Information</h4>
-          <p className="text-[15px] mb-2" style={{ color: 'hsl(0 0% 100% / 0.55)' }}>📧 assignmenttasktap@gmail.com</p>
-          <p className="text-[20px] mb-2" style={{ color: 'hsl(0 0% 100% / 0.55)' }}>📲 78 300 1095</p>
-          <p className="text-[20px] mb-2" style={{ color: 'hsl(0 0% 100% / 0.55)' }}>⏰ 24/7 Support</p>
+          <p className="text-[14px] mb-2" style={{ color: 'hsl(0 0% 100% / 0.55)' }}>✉ assignmenttasktapme@gmail.com</p>
+          <p className="text-[14px] mb-2" style={{ color: 'hsl(0 0% 100% / 0.55)' }}>💬 +94 78 300 1095</p>
+          <p className="text-[14px] mb-2" style={{ color: 'hsl(0 0% 100% / 0.55)' }}> ⓕ Assignment Tasktap</p>
+          <p className="text-[14px] mb-2" style={{ color: 'hsl(0 0% 100% / 0.55)' }}>⏰24/7 Support</p>
         </div>
       </div>
 
