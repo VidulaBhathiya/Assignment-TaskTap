@@ -1,5 +1,6 @@
 import heroBg from "@/assets/hero-bg.jpg";
-import { Mail, MessageCircle } from "lucide-react";
+import { MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const stats = [
   { num: "500+", label: "Projects Delivered" },
@@ -25,7 +26,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 max-w-[760px] mx-auto text-center">
         <div className="inline-flex items-center justify-center gap-2 bg-secondary/20 border border-secondary/40 text-secondary px-4 py-1.5 rounded-full text-[13px] font-bold tracking-wide mb-6 animate-fade-up mx-auto w-fit">
-          Trusted Academic Support 
+          Best assignment help in Sri Lanka 2026
         </div>
 
         <h1 className="font-heading text-[clamp(2.4rem,5vw,3.8rem)] font-black leading-[1.1] mb-5 animate-fade-up [animation-delay:100ms] opacity-0" style={{ color: 'hsl(0 0% 98%)' }}>
@@ -46,13 +47,13 @@ const HeroSection = () => {
             <MessageCircle className="w-5 h-5" />
             Message on WhatsApp
           </a>
-          <a
-            href="#services"
+          <Link
+            to="/services"
             className="inline-flex items-center px-10 py-7.5 rounded-full border-2 border-white/50 text-[15px] font-bold no-underline hover:border-white hover:bg-white/10 transition-all"
             style={{ color: 'hsl(0 0% 100%)' }}
           >
             View Our Services
-          </a>
+          </Link>
         </div>
 
         <div className="flex gap-10 mt-[50px] flex-wrap justify-center animate-fade-up [animation-delay:400ms] opacity-0">

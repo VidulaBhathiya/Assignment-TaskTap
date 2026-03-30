@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WhatsAppFab from "@/components/WhatsAppFab";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -9,7 +10,16 @@ const Contact = () => {
       <Navbar />
       <div className="pt-[70px]">
         {/* Page Header */}
- 
+        <section className="px-[5%] pt-10">
+          <div className="max-w-6xl mx-auto">
+            <Link
+              to="/"
+              className="inline-flex items-center px-5 py-2.5 rounded-full border border-border text-sm font-semibold text-foreground no-underline hover:bg-muted transition-colors"
+            >
+              Home
+            </Link>
+          </div>
+        </section>
 
         <ContactSection />
 
